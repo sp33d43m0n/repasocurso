@@ -16,18 +16,32 @@
         </div>
         <form action="#">
             <div class="information">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre">
-                <label for="Apellido">Apellido</label>
-                <input type="Apellido" id="apellido" name="apellido">
-                <label for="email">Email</label>
-                <input type="email" id="email" size="64" maxlength="64" required placeholder="username@acme.com" pattern=".+@acme\.com" name="email">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" pattern="^(?=.[A-Za-z])(?=.\d)(?=.[@$!%#?&])[A-Za-z\d@$!%*#?&]{8,}$" title="Debe contener al menos 8 caracteres una letra, un numero y un caracter especial" required>
-                <label for="password_confirm">Confirm Password</label>
-                <input type="password" id="password_confirm" name="password_confirm" pattern="^(?=.[A-Za-z])(?=.\d)(?=.[@$!%#?&])[A-Za-z\d@$!%*#?&]{8,}$" title="Debe contener al menos 8 caracteres una letra, un numero y un caracter especial" required>
-                <label for="birthday">Cumpleaños</label>
-                <input type="date" name="birthday" id="birthday"> 
+                <table>
+                    <tr>
+                        <td> <label for="nombre">Nombre</label> </td>
+                        <td> <input type="text" id="nombre" name="nombre"> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="Apellido">Apellido</label> </td>
+                        <td> <input type="Apellido" id="apellido" name="apellido"> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="email">Email</label> </td>
+                        <td> <input type="email" id="email" size="64" maxlength="64" required placeholder="username@acme.com" pattern=".+@acme\.com" name="email"> </td>
+                    </tr> 
+                    <tr>
+                        <td> <label for="password">Password</label> </td>
+                        <td> <input type="password" id="password" name="password" pattern="^(?=.[A-Za-z])(?=.\d)(?=.[@$!%#?&])[A-Za-z\d@$!%*#?&]{8,}$" title="Debe contener al menos 8 caracteres una letra, un numero y un caracter especial" required> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="password_confirm">Confirm Password</label> </td>
+                        <td> <input type="password" id="password_confirm" name="password_confirm" pattern="^(?=.[A-Za-z])(?=.\d)(?=.[@$!%#?&])[A-Za-z\d@$!%*#?&]{8,}$" title="Debe contener al menos 8 caracteres una letra, un numero y un caracter especial" required> </td>
+                    </tr>    
+                    <tr>
+                        <td> <label for="birthday">Cumpleaños</label> </td>
+                        <td> <input type="date" name="birthday" id="birthday">  </td>
+                    </tr>    
+                </table>
             </div>
             <div class="gender">
                 <fieldset>

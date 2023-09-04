@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mi primera pagina web</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="pagina venta de juguetes japoneses que desarrollan el intelecto de los niños y promueve la creatividad">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="border">
+        <div class="title">
+            <h1>Mi formulario de registro</h1>
+        </div>
+        <form action="#">
+            <div class="information">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="Apellido">Apellido</label>
+                <input type="Apellido" id="apellido" name="apellido">
+                <label for="email">Email</label>
+                <input type="email" id="email" size="64" maxlength="64" required placeholder="username@acme.com" pattern=".+@acme\.com" name="email">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" pattern="^(?=.[A-Za-z])(?=.\d)(?=.[@$!%#?&])[A-Za-z\d@$!%*#?&]{8,}$" title="Debe contener al menos 8 caracteres una letra, un numero y un caracter especial" required>
+                <label for="password_confirm">Confirm Password</label>
+                <input type="password" id="password_confirm" name="password_confirm" pattern="^(?=.[A-Za-z])(?=.\d)(?=.[@$!%#?&])[A-Za-z\d@$!%*#?&]{8,}$" title="Debe contener al menos 8 caracteres una letra, un numero y un caracter especial" required>
+                <label for="birthday">Cumpleaños</label>
+                <input type="date" name="birthday" id="birthday"> 
+            </div>
+            <div class="gender">
+                <fieldset>
+                    <legend>Seleccione su genero</legend>
+                    <label for="hombre">hombre</label>
+                    <input type="radio" name="hombre" id="hombre" checked>
+                    <label for="mujer">mujer</label>
+                    <input type="radio" name="mujer" id="mujer" checked>
+                    <label for="lgtbi">lgtbi</label>
+                    <input type="radio" name="lgtbi" id="lgtbi" checked>
+                </fieldset>
+            </div>   
+            <div class="description">
+                <p>Una breve descripcion de ti</p>
+                <textarea name="descripcion" rows="20" cols="50"></textarea>
+            </div>
+            <div class="idioma">
+                <label for="idioma">idioma</label>
+                <select name="Idiomas" id="lenguaje">
+                    <option value="español">Español</option>
+                    <option value="español">Ingles</option>
+                    <option value="español">Portuges</option>
+                </select>
+            </div>
+            <div class="sendbutton">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+
+
+     </div>    
+</body>
+</html>
